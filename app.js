@@ -16,7 +16,7 @@ let mainInterval;
 
 let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
 "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-let str = 0;
+
 let literature = "";
 let found = [];
 
@@ -79,39 +79,5 @@ let searchWord = () => {
     }
 
    
-    // let re = new RegExp('^' + str);
-    // filteredList = filteredList.filter(function(val) {
-    //     return re.test(val);
-    // });
     
-    // for (let x of filteredList) {
-    //     if (x === str) {
-    //         found.push(str);
-    //     }
-    // }    
-    // if (filteredList.length === 0) {
-    //     for (let z of list) {
-    //         if (str.includes(z) && z !== str) {
-    //             console.log(z, str);
-                
-    //             found.push(z);
-    //             console.log(found)
-    //         }
-    //     }
-        
-    //     str="";
-    //     filteredList=list;
-    // }    
-}
-
-// let colorWords = () => {
-//     for (let x of found) {
-// longest.innerText = "Longest word found: " + found.sort((a,b)=>b.length-a.length)[0]
-
-//       let reg = new RegExp("(" + x + ")(?![^<]*>|[^<>]*</)", "g");
-//       monkeyText.innerHTML = monkeyText.innerHTML.replace(reg, `<u>${x}</u>`);
-
-//         }
-//     }
-})  
 
