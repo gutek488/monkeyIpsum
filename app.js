@@ -75,9 +75,9 @@ let searchWord = () => {
                         
 
                 }
-                str = 0;        
+
     }
 
-   
+})   
     
 
