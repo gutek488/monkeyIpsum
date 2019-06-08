@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.monkeyText {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    word-wrap: break-word;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+}
+
+
+u {
+    background-color: yellow;
+    position: relative;
+}
+.longest, .wordsLength {
+    width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.play {
+    width: 50px;
+    height: 50px;
+    background-image: url("./play.png");
+    background-size: contain;
+    cursor: pointer;
+}
+.stop {
+    width: 50px;
+    height: 50px;
+    background-image: url("./pause.png");
+    background-size: contain;
+}
+.menu {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto 50px;
+
+
+}
+h1 {
+    font-size: 8em;
+    line-height: 0.8;
+    text-align: center;
+    margin: 50px 0px 25px 0;
+    font-family: 'Cutive Mono', monospace;
+
+
+
+}
+.hideList {
+    
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position: relative;
+        cursor: pointer;
+        border-top: 10px solid black;
+        transform: rotate(-90deg);       
+         transition: all 0.2s linear;
+
+
+    }
+    .hidelist-container {
+        margin: 0 auto 25px;
+        display: flex;
+    width: 150px;
+
+    }
+    .hideList--rotate {
+        transform: rotate(0deg);
+
+
+
+    }
+.found {
+    background-color: #f4f4f4;
+    width: 80vw;
+    margin: 0 auto 50px;
+    max-height: 0;
+    overflow: hidden;
+   
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.found--active {
+    max-height: 9999px;
+    transition: max-height 1s ease-in-out;
+
+}
+.foundWord {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 2px;
+    background-color: #dbdbdb;
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+}
+.hidelist-description {
+    width: 100px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+/* font-family: 'Open Sans', sans-serif; */
