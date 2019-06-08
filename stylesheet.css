@@ -76,8 +76,8 @@ h1 {
     .hidelist-container {
         margin: 0 auto 25px;
         display: flex;
-    width: 150px;
-align-items: center;
+        width: 150px;
+        align-items: center;
 
     }
     .hideList--rotate {
