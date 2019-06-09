@@ -16,6 +16,8 @@
 }
 
 
+
+
 u {
     background-color: yellow;
     position: relative;
@@ -52,7 +54,6 @@ background-repeat: no-repeat;
 
 }
 h1 {
-    font-size: 8em;
     line-height: 0.8;
     text-align: center;
     margin: 50px 0px 25px 0;
@@ -60,6 +61,12 @@ h1 {
 
 
 
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 8em;
+    }
 }
 .hideList {
     
