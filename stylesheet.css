@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 .monkeyText {
-    height: 80vh;
+    height: 50vh;
     width: 80vw;
     margin: auto;
     word-wrap: break-word;
     font-family: 'Cutive Mono', monospace;
     font-size: 30px;
     letter-spacing: 1px;
+    overflow-y: scroll;
     font-weight: 700;
-
 }
 
 
