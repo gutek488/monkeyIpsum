@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 
-let monkeyText = document.querySelector(".monkeyText");
-let longest = document.querySelector(".longest");
-let wordsLength = document.querySelector(".wordsLength");
-let playStop = document.querySelector(".button");
+const monkeyText = document.querySelector(".monkeyText");
+const longest = document.querySelector(".longest");
+const wordsLength = document.querySelector(".wordsLength");
+const playStop = document.querySelector(".button");
 let playing = false;
-let foundDiv = document.querySelector(".found");
-let hideList = document.querySelector(".hideList");
+const foundDiv = document.querySelector(".found");
+const hideList = document.querySelector(".hideList");
 let mainInterval;
 
 let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
@@ -32,14 +32,13 @@ playStop.addEventListener("click", ()=>{
                                 longest.innerText = "Longest word found: " + found.sort((a,b)=>b.length-a.length)[0]
 
                         }
-                        //colorWords();
-                        wordsLength.innerText = "Number of words found: " + found.length; 
-                        },50)
-                } else  {
-                        clearInterval(mainInterval);
-                        playing = false;     
-                        playStop.classList.remove("stop");                   
-                }
+                wordsLength.innerText = "Number of words found: " + found.length; 
+                },50)
+        } else  {
+                clearInterval(mainInterval);
+                playing = false;     
+                playStop.classList.remove("stop");                   
+        }
         
 
 
@@ -49,8 +48,6 @@ playStop.addEventListener("click", ()=>{
 hideList.addEventListener("click", ()=>{
         foundDiv.classList.toggle("found--active");
         hideList.classList.toggle("hideList--rotate")
-
-
 })
 
 
@@ -68,18 +65,11 @@ let searchWord = () => {
                                 newWord.classList.add("foundWord");
                                 foundDiv.appendChild(newWord);
                                 found.sort((a,b)=>b.length-a.length);
-
-                                
-
                                 }
-                        
-
                         }
                         str = 0;
-
                 }
         }
-      
-})   
+});
     
 
